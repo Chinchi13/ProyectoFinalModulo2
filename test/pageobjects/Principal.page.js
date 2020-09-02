@@ -19,6 +19,10 @@ get FechaRegreso() {return $('//div[@data-value="2020-09-23"]')}
 get BtnEstablecerFechas() {return $('//button[@data-test="SearchFormDoneButton"]')}
 get BtnExplorar() { return $('[data-Test=LandingSearchButton]')}
 
+getTitulo(){
+    expect(this.ViajesLabel).toBeDisplayed();
+
+}
 
 SeleccionarViajes(){
     browser.pause(5000);
